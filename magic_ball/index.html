@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" >
+
+<script>
+
+window.onload = function () 
+{
+  var answers = [
+'Може бути.' ,'Звичайно ні', 'Я сподіваюся, що так', 'Тiльки в найсміливіших мріях', 'Є хороші шанси', 'Цілком ймовірно', 'Я б саме так i сказав', 'Ніколи!', 'Аха-ха! Справді?!?', 'Пфф', 'Вибач, але я не знаю',  ' Я б краще не сказав.', 'Кого це хвилює?', 'Можливо.', 'Ніколи, ніколи, ніколи.', 'Є маленький шанс.', 'Так!'];
+
+  var container = document.getElementById('answerContainer');
+  // выбираем элемент с идентификатором answerContainer
+  document.getElementById('answerButton').onclick = function () 
+  {
+    var answer = answers[Math.floor(Math.random() * answers.length)];
+    container.innerHTML = answer;
+  };
+};
+  //Свойство innerHTML позволяет получить HTML-содержимое элемента в виде строки.
+  // Событие load на объекте window наступает, когда загрузилась вся страница, включая стили, картинки и другие ресурсы. Это событие доступно через свойство onload.Иногда, происходит такое, что  скрипт не работает. И непонятно почему.Одна из причин - это загрузка скрипта раньше, чем самой страницы. Ваш скрипт - тупо не видит код ниже себя.Для этого существует window.onload
+</script>
+</head>
+<body>
+<div id="wrapper">
+
+<input id="questionArea" type="text" placeholder="enter a question">
+
+<div id="magicBall">
+<div id="answerContainer"></div>
+</div>
+  
+<button id="answerButton"> Make a prediction </button>
+</div>
+</body>
+</html>

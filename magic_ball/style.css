@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+#answerContainer{
+   color: rgb(255, 255, 255);
+  text-shadow: 2px 0 black, 0 1px black, 1px 0 black, 0 1px black;
+  font-size: 6vmin;
+  font-weight: bold;
+ 
+}
+#magicBall{
+  width:350px;
+  height:350px;
+  background-image: url(magic_ball.png);
+  background-position: center;
+  margin:auto;
+  margin-top:10px;
+  border-radius:100%;
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+#questionArea{
+    font-weight: bold; 
+    font-size: 6.5vmin;
+    color: azure;
+    margin: 2vmin;
+  padding: 1.2vmin;
+  width: 50vmin;
+  text-align: center;
+  border: 2px solid slategray;
+  border-radius: 2.3vmin;
+  background-color: rgba(205, 169, 252, 0.949);
+}
+#wrapper {
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,9,121,1) 42%, rgba(38,8,138,1) 76%, rgba(50,89,150,1) 100%);
+ width: 70vmin; 
+ margin: 0 auto; 
+ margin-top: 6.5vmin; 
+ border: 1.3vmin solid purple;
+ text-align: center; 
+ font-family: 'Helvetica Neue', arial; 
+ font-weight: 100;
+}
+p, input, button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 27px;
+}
+
+input {
+  padding: 5px 15px;/* Поля вокруг текста */
+  background: #fff;
+  border: 2px solid #ddd;
+  outline: none; /* Параметры рамки */
+  border-radius:5%;
+}
+
+button {
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  outline: none; /* Параметры рамки */
+   
+
+}

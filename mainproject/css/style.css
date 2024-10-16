@@ -1,0 +1,38 @@
+h1{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    font-size: 6.9vmin;
+}
+.header{
+    margin-top: 10vmin;
+}
+.container{
+    position: relative;
+    justify-content:center;
+    margin: 0 auto;
+    width: 120vmin;
+    height: 60vmin;
+    text-align: center;
+    border-radius: 3vmin;
+    border: 1.3vmin solid rgba(180, 174, 238, 0.708);
+}
+.images{
+    display: flex;
+    justify-content: center;
+    margin: auto 4vmin 7vmin 4vmin;
+    box-sizing: border-box;
+    padding: 1.5vmin 1.5vmin;
+}
+img{
+    display: flex;
+    box-sizing: border-box;
+    margin: auto 3vmin 3vmin 3vmin;
+    height: 16vmin;
+    width: 16vmin;
+    border-radius: 2vmin;
+}
+
+
